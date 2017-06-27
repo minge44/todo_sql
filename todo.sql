@@ -19,5 +19,5 @@ INSERT INTO todos (title, details, priority, created_at, completed_at) VALUES ('
 
 SELECT title FROM todos where completed_at IS NULL;
 SELECT title FROM todos where priority > 1;
-UPDATE todos  Set completed_at = current_timestamp WHERE completed_at IS NULL;
+UPDATE todos  Set completed_at = current_timestamp WHERE id =5;
 DELETE FROM todos WHERE completed_at IS NOT NULL;
